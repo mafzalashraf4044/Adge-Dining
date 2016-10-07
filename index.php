@@ -32,11 +32,11 @@
       <div class="nav-wrapper">
 
         <div class="logo center hide-on-med-and-down yellow black-text section">
-            <h2>Adge Dinnings</h2>
+            <h2>Adge Dining</h2>
         </div>
       
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-        <div class="logo center hide-on-large-only"><span>Adge Dinnings<span></div>
+        <div class="logo center hide-on-large-only"><span>Adge Dining<span></div>
 
           <ul class="hide-on-med-and-down center green" id="centerList">
             <li><a href="sass.html">Sass</a></li>
@@ -46,7 +46,7 @@
           </ul>      
 
           <ul class="side-nav" id="mobile-demo">
-            <a href="#" class="center"><div class="logo"><h4>Adge Dinnings</h4></div></a>
+            <a href="#" class="center"><div class="logo"><h4>Adge Dining</h4></div></a>
             <li><a href="sass.html">Sass</a></li>
             <li><a href="badges.html">Components</a></li>
             <li><a href="collapsible.html">Javascript</a></li>
