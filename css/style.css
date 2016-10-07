@@ -37,3 +37,14 @@
                              text-shadow: 2px 2px 4px black;
                              font-family: 'Francois One', sans-serif;}
 
+
+/*for devices greater than 992px*/
+@media only screen and (min-device-width: 992px) {
+  #slideShow{margin-top: 100px;}
+
+}
+
+/*for devices less than 992px*/
+@media only screen and (max-device-width: 992px) {
+      
+}
