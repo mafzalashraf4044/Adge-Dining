@@ -1,0 +1,61 @@
+/*Navbar Styling*/
+.logo{font-family: Papyrus, fantasy;
+      font-weight: bold;}
+
+.logo span{font-size: 1.5rem;}
+
+nav{padding: 0 120px;
+    box-shadow: 0 0.5px 12px 0 white;}
+
+nav a{color: #bfc8ce!important;}
+
+.brand-logo{font-family: Papyrus, fantasy;
+            font-weight: bold;
+            color: #f16522!important;}
+
+/*.carousel text styling*/
+
+.carousel-fixed-item{text-shadow: 2px 2px 4px black;}
+.carousel-fixed-item h2{font-family: 'Architects Daughter', cursive;}
+
+/*Footer Styling*/
+
+#footer1{background-image: url('../images/footer.jpg');
+         background-repeat: no-repeat;
+         background-size: 100% 100%;
+         padding: 80px 0px;}
+
+#footer1 ul{list-style-type: none;
+            margin: 0px;
+            padding: 0px;}
+ul.collection{box-shadow: 1px 1px 12px white;}
+ul.collection a{font-weight: bold;
+                color: white;}
+ul.collection>li{background-color: rgba(255,255,255,0)!important;
+  } 
+
+#footer1 .socialIcons{padding: 20px 0px;}
+
+#footer1 .socialIcons>li{display: inline-block;
+                         margin-right: 8px;}
+
+#footer2{padding: 1rem 0.3rem 2rem 0.3rem; 
+         font-weight: bold;}
+
+/*for devices greater than 992px*/
+@media only screen and (min-device-width: 992px) {
+  #slideShow{height: 92vh;}
+  #slideShow img{height: 92vh;}
+
+
+}
+
+/*for devices less than 992px*/
+@media only screen and (max-device-width: 992px) {
+  #slideShow{height: 40vh;} 
+  #slideShow img{height: 40vh;}   
+  
+  nav{padding: 0px;}
+
+
+}

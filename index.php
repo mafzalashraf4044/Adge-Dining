@@ -1,83 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <meta name="viewport" content="width=device-width, initial-scele=1.0">
-
-    <!--Import Google Icon Font-->
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <!-- Materialize CSS-->
-    <link rel="stylesheet" href="./materialize/css/materialize.min.css">
-
-    <!-- Custom CSS-->
-    <link rel="stylesheet" href="./css/style.css">
-
-
-</head>
-<body>
-    
-  <div id="navbar" class="navbar-fixed">
-
-        <!-- Dropdown Structure -->
-        <ul id="dropdown1" class="dropdown-content">
-            <li><a href="#!">one</a></li>
-            <li><a href="#!">two</a></li>
-            <li class="divider"></li>
-            <li><a href="#!">three</a></li>
-        </ul>
-
-    <nav>
-      <div class="nav-wrapper">
-
-        <div class="logo center hide-on-med-and-down yellow black-text section">
-            <h2>Adge Dining</h2>
-        </div>
-      
-        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-        <div class="logo center hide-on-large-only"><span>Adge Dining<span></div>
-
-          <ul class="hide-on-med-and-down center green" id="centerList">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">Javascript</a></li>
-            <li><a href="mobile.html">Mobile</a></li>
-          </ul>      
-
-          <ul class="side-nav" id="mobile-demo">
-            <a href="#" class="center"><div class="logo"><h4>Adge Dining</h4></div></a>
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">Javascript</a></li>
-            <li><a href="mobile.html">Mobile</a></li>
-          </ul>
-      </div>
-    </nav>    
+<?php 
+  define('STYLESHEET', './css/index.css');
   
+  include('./includes/header.php');
+?>
+
+<div id="mainPage">
+  <div class="row">
+    <div class="col m7 col-left">
+
+      <h1>Adge Dining</h1>
+    
+      <p>Since the opening in late 2012; Baccomatto Osteria has delivered a no-fuss approach to Italian food & wine. Baccomatto uses the freshest of ingredients including all their pasta made fresh on a daily basis. Come and taste the selection of tapas-style starters, mains and desserts at our rustic Italian eatery today.</p>
+
+      <p>Baccomatto Osteria have recently received 1 hat at the The Sydney Morning Herald 2017 Good Food Guide Awards.</p>
+
+      <p>Baccomatto Osteria also houses our daily breakfast here at the Cambridge Hotel.</p>
+
+      <h3>Baccomatto Specials</h3>
+
+      <p><strong>Monday - Sunday (6-7 pm)</strong> - Pasta &amp; Vino $20.00 (Hotel Guests only)</p>
+
+      <p><strong>Lunch Special (Friday, Saturday, Sunday)</strong> - Pasta &amp; Vino $20.00</p>
+
+      <h3>Breakfast</h3>
+
+      <p>ADGE Hotel guests can also enjoy daily breakfast at Baccomatto Osteria for $20 per person. </p>
+
+      <p>Breakfast is served in a buffet style and includes hot dishes such as toast, hash browns, bacon, eggs of your choice, sausages, a selection of fruit, muesli and yoghurt, all topped off with your choice of Italian coffee.</p>
+    </div>
+
+    <div class="col m5 col-right">
+      <h2>OPENING HOURS</h2>
+      <h3>Baccomatto Osteria</h3>
+
+      <h4>Breakfast</h4>
+      <p><strong>MONDAY - SATURDAY</strong> 06:30 - 10:00</p>
+      <p><strong>SUNDAY</strong> 06:30 - 10:30</p>
+
+      <h4>Lunch and Dinner</h4>
+      <p><strong>MONDAY - WEDNESDAY</strong> 17:00 - Late</p>
+      <p><strong>FRIDAY - SUNDAY</strong> 12:00 - Late</p>
+
+      <p><i>To make a booking call: +61 2 9215 5140</i></p>
+
+      <p>www.baccomattoosteria.com.au</p>
+
+    </div>
   </div>
+</div>
 
-  <div id="slideShow">
-    <div class="carousel-item"><img src="./images/slideShowImg1.jpg"></div>
-    <div class="carousel-item"><img src="./images/slideShowImg2.jpg"></div>
-    <div class="carousel-item"><img src="./images/slideShowImg3.jpg"></div>
-    <div class="carousel-item"><img src="./images/slideShowImg4.jpg"></div>
-  </div>
-
-
-
-
-  <h1>Gello woldjkfsldf</h1>
-  <h1>Gello woldjkfsldf</h1>
-  <h1>Gello woldjkfsldf</h1>
-  <h1>Gello woldjkfsldf</h1>
-  <h1>Gello woldjkfsldf</h1>
-  <h1>Gello woldjkfsldf</h1>
-  <h1>Gello woldjkfsldf</h1>
-  <h1>Gello woldjkfsldf</h1>
-
-    <script src="jquery-2.2.3.min.js"></script>
-    <script src="./materialize/js/materialize.min.js"></script>
-    <script src="./scripts/script.js"></script>
-</body>
-</html>
+<?php 
+  include('./includes/footer.php');
+?>
