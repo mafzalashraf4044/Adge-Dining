@@ -1,10 +1,11 @@
 <?php 
   define('STYLESHEET', './css/index.css');
   
+  define("TITLE", "Home | Adge Dining");
   include('./includes/header.php');
 ?>
 
-<div id="mainPage">
+<div id="indexPage">
   <div class="row">
     <div class="col m7 col-left">
 

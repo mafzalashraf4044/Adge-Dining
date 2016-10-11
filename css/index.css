@@ -1,11 +1,17 @@
-.col-right{background-color: #db4f44;
-           color: white;}
+div.col-right{
+    background-color: #db4f44;
+    color: white;
+}
 
-.col-right{background-color: #db4f44;
-           color: white;}           
+div.col-right{
+    background-color: #db4f44;
+    color: white;
+}           
 
-.col.m7.col-left, .col.m5.col-right{padding: 85px;
-                                    height: 100vh;
-                                    text-align: justify;}
+div.col.m7.col-left, div.col.m5.col-right{
+    padding: 85px;
+    height: 100vh;
+    text-align: justify;
+}
 
-#mainPage > .row{margin-bottom: 0px;}
+div#indexPage > .row{margin-bottom: 0px;}

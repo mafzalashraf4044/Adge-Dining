@@ -7,7 +7,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title><?php echo TITLE?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Font Awesome -->
@@ -32,14 +32,6 @@
   <!-- Navbar -->
   <div class="navbar-fixed">
 
-    <!-- Dropdown Structure -->
-    <ul id="dropdown1" class="dropdown-content">
-        <li><a href="#!">one</a></li>
-        <li><a href="#!">two</a></li>
-        <li class="divider"></li>
-        <li><a href="#!">three</a></li>
-    </ul>
-
     <nav class="black">
       <div class="nav-wrapper">
 
@@ -58,18 +50,14 @@
           <!-- Logo for Mobile Devices -->
           <div class="logo center hide-on-large-only"><span>Adge Dining<span></div>
 
+          <!-- Side Nav for Mobile Devices -->
           <ul class="side-nav" id="mobile-demo">
             <a href="#" class="center"><div class="logo"><h4>Adge Dining</h4></div></a>
+            <?php foreach($navbar_links as $value) {?>
+              <div class="divider"></div>
+              <li><a href="<?php echo $value['link']?>"><?php echo $value['name']?></a></li>
+            <?php }?>
             <div class="divider"></div>
-            <li><a href="sass.html">Sass</a></li>
-            <div class="divider"></div>
-            <li><a href="badges.html">Components</a></li>
-            <div class="divider"></div>
-            <li><a href="collapsible.html">Javascript</a></li>
-            <div class="divider"></div>
-            <li><a href="mobile.html">Mobile</a></li>
-            <div class="divider"></div>
-
           </ul>
       </div>
     </nav>    
@@ -85,10 +73,8 @@
       <h3>Come &amp; Experence our best of world class cusine!</h3>
     </div>
 
-    <div class="carousel-item"><img src="./images/bg1.jpg"></div>
-    <div class="carousel-item"><img src="./images/bg2.jpg"></div>
-    <div class="carousel-item"><img src="./images/bg3.jpg"></div>
-    <div class="carousel-item"><img src="./images/bg4.jpg"></div>
-
+     <?php foreach($carousel_img_urls as $value) {?>
+        <div class="carousel-item"><img src="<?php echo $value?>"></div>
+     <?php }?>
 
   </div>

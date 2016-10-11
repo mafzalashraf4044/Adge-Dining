@@ -14,5 +14,18 @@
         array('name' => 'TERMS & CONDITIONS','link' => 'recipies.php')
     );
     
+    $carousel_img_urls = array(
+        "./images/bg1.jpg",
+        "./images/bg2.jpg",
+        "./images/bg3.jpg",
+        "./images/bg4.jpg"
+    );
+
+    $social_icons = array(
+        "facebook",
+        "instagram",
+        "google",
+        "youtube"
+    );
     
 ?>

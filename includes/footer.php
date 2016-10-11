@@ -9,10 +9,9 @@
           </ul>
 
           <ul class="socialIcons">
-            <li><a class="btn-floating btn-large waves-effect waves-light red"><i class="fa fa-facebook"></i></a></li>
-            <li><a class="btn-floating btn-large waves-effect waves-light red"><i class="fa fa-instagram"></i></a></li>
-            <li><a class="btn-floating btn-large waves-effect waves-light red"><i class="fa fa-youtube"></i></a></li>
-            <li><a class="btn-floating btn-large waves-effect waves-light red"><i class="fa fa-google"></i></a></li>
+            <?php foreach($social_icons as $value) {?>
+              <li><a class="btn-floating btn-large waves-effect waves-light red"><i class="fa fa-<?php echo $value?>"></i></a></li>
+            <?php }?>
           </ul>
         </div>
 
