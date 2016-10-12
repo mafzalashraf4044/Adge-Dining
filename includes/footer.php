@@ -34,15 +34,17 @@
       </div>
     </div>  
   </div>
-
+ 
   <div class="black white-text section" id="footer2">
-    <div class="left">&copy; <?php echo Date('Y'); ?> Adge Dining</div>
+    <div class="left">&copy; <?php echo Date('Y');?> Adge Dining</div>
     <div class="right">Designed &amp; Developed by Afzal Ashraf</div>
   </div>
 
 
     <script src="jquery-2.2.3.min.js"></script>
     <script src="./materialize/js/materialize.min.js"></script>
-    <script src="./scripts/index.js"></script>
+    <script src="./scripts/header&footer.js"></script>
+    <script src="<?php echo SCRIPT;?>"></script>
+    
 </body>
 </html>

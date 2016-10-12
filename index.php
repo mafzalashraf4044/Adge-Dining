@@ -1,6 +1,5 @@
 <?php 
   define('STYLESHEET', './css/index.css');
-  
   define("TITLE", "Home | Adge Dining");
   include('./includes/header.php');
 ?>

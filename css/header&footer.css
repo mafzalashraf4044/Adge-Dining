@@ -65,9 +65,9 @@ div#footer2{
 
 /*for devices less than 992px*/
 @media only screen and (max-device-width: 992px) {
-  #slideShow{height: 40vh;} 
+  #slideShow{height: 94vh;} 
 
-  #slideShow img{height: 40vh;}   
+  #slideShow img{height: 94vh;}   
   
   nav{padding: 0px;}
 
