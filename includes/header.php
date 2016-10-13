@@ -1,21 +1,24 @@
-<?php 
+<?php
   include('./includes/arrays.php');
 ?>
 
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title><?php echo TITLE?></title>
+    <title>
+        <?php echo TITLE?>
+    </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Font Awesome -->
     <script src="https://use.fontawesome.com/8a2d7d85ce.js"></script>
-    
+
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">    
-    
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
+
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -27,28 +30,32 @@
     <link rel="stylesheet" href="<?php echo STYLESHEET?>">
 
 </head>
+
 <body>
-  
-  <!-- Navbar -->
-  <div class="navbar-fixed">
 
-    <nav class="black">
-      <div class="nav-wrapper">
+<!-- Navbar -->
+<div class="navbar-fixed">
+  <nav class="black">
+        <div class="nav-wrapper">
 
-          <!-- Logo for Large Screen Devices -->        
-          <a href="#" class="brand-logo hide-on-med-and-down">Adge Dining</a>
+            <!-- Logo for Large Screen Devices -->
+            <a href="#" class="brand-logo hide-on-med-and-down">Adge Dining</a>
 
-          <ul class="hide-on-med-and-down right" id="centerList">
-            <?php foreach($navbar_links as $value) {?>
-              <li><a href="<?php echo $value['link']?>"><?php echo $value['name']?></a></li>
-            <?php }?>
-          </ul>      
+            <ul class="hide-on-med-and-down right" id="centerList">
+                <?php foreach($navbar_links as $value) {?>
+                <li>
+                    <a href="<?php echo $value['link']?>">
+                        <?php echo $value['name']?>
+                    </a>
+                </li>
+                <?php }?>
+            </ul>
 
-          <!-- Collapse button for mobile devices-->
-          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <!-- Collapse button for mobile devices-->
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 
-          <!-- Logo for Mobile Devices -->
-          <div class="logo center hide-on-large-only"><span>Adge Dining<span></div>
+            <!-- Logo for Mobile Devices -->
+            <div class="logo center hide-on-large-only"><span>Adge Dining<span></div>
 
           <!-- Side Nav for Mobile Devices -->
           <ul class="side-nav" id="mobile-demo">
@@ -60,8 +67,7 @@
             <div class="divider"></div>
           </ul>
       </div>
-    </nav>    
-  
+    </nav>
   </div>
 
   <!-- Image Carousel -->

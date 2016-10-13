@@ -1,0 +1,20 @@
+div#recipiesPage{
+  background-color: #F3F3F3;
+  width: 100%;
+  min-height: 135vh;
+}
+
+div#bookingPage>div.row {
+    margin-bottom: 0px;
+}
+
+div.heading {
+    margin-bottom: 2em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+div.heading h2, div.heading h5 {
+    color: white;
+    font-weight: bolder
+}
