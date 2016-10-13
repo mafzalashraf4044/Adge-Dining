@@ -12,7 +12,7 @@
 			<div class="heading">
 						<img src="./images/forkspoon.png" class="circle">
 						<h2>BEST OF DINING EXPERIENCE</h2>
-				<h5>BOOK YOUR TABLE NOW</h5>
+						<h5>BOOK YOUR TABLE NOW</h5>
 			</div>
 
 			<div class="container booking-form">
@@ -23,48 +23,25 @@
 						<p>Select your dining space</p>
 
 						<div class="select-person">
-							<div class="option">
-								<img src="./images/forkspoon.png" class="circle">
-								<div>
-									<i class="fa fa-check"></i>
-									<p class="total-person">02</p>
-									<p>Person</p>
+							<?php foreach ($no_of_person as $value) {?>
+								<div class="option">
+									<img src="./images/forkspoon.png" class="circle">
+									<div>
+										<i class="fa fa-check"></i>
+										<p class="total-person"><?php echo $value ?></p>
+										<?php if(strcmp($value, "custom") != 0){ ?>
+										<p>Person</p>
+										<?php } ?>
+									</div>
 								</div>
-							</div>
-
-							<div class="option">
-								<img src="./images/forkspoon.png" class="circle">
-								<div>
-									<i class="fa fa-check"></i>
-									<p class="total-person">05</p>
-									<p>Person</p>
-								</div>
-							</div>
-
-							<div class="option">
-								<img src="./images/forkspoon.png" class="circle">
-								<div>
-									<i class="fa fa-check"></i>
-									<p class="total-person">10</p>
-									<p>Person</p>
-								</div>
-							</div>
-
-							<div class="option">
-								<img src="./images/forkspoon.png" class="circle">
-								<div>
-									<i class="fa fa-check"></i>
-									<p class="total-person">15</p>
-									<p>Person</p>
-								</div>
-							</div>
+							<?php } ?>
 						</div>
 
 						<div class="row form-area">
 							<form class="col s12">
 								<div class="row">
 									<div class="input-field col s4">
-										<input placeholder="" id="no-of-person" value="03" type="text" class="validate">
+										<input placeholder="" id="no-of-person" value="" type="text" class="validate">
 										<label for="no-of-person">Number of Person</label>
 									</div>
 									<div class="input-field col s4">
@@ -99,7 +76,7 @@
 				</div>
 			</div>
 
-			<div class="container call-card">
+			<div class="container contact-us-card">
 				<div class="row">
 					<div class="col l3 hide-on-med-and-down">
 						<h5>OUR <span class="white-text">DELICIOUS FOOD</span> AT YOUR DOORSTEP</h5>
@@ -122,6 +99,4 @@
 </div>
 <?php
 include('./includes/footer.php');
-
-
 ?>

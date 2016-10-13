@@ -1,6 +1,7 @@
 //Side Nav Initializatino for Mobile Devices
 $(".button-collapse").sideNav();
 
+//Carousel Initialization
 $(document).ready(function() {
     $('.carousel').carousel();
 });
@@ -8,3 +9,4 @@ $(document).ready(function() {
 $('.carousel.carousel-slider').carousel({
     full_width: true
 });
+s

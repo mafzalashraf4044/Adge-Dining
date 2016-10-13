@@ -1,4 +1,4 @@
-<?php 
+<?php
     $navbar_links = array(
         array('name' => 'Home','link' => 'index.php'),
         array('name' => 'Book Now','link' => 'booking.php'),
@@ -13,7 +13,7 @@
         array('name' => 'PRIVACY POLICY','link' => 'menu.php'),
         array('name' => 'TERMS & CONDITIONS','link' => 'recipies.php')
     );
-    
+
     $carousel_img_urls = array(
         "./images/bg1.jpg",
         "./images/bg2.jpg",
@@ -27,5 +27,7 @@
         "google",
         "youtube"
     );
-    
+
+    $no_of_person = array("02", "05", "10", "custom");
+
 ?>

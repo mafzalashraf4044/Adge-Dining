@@ -2,15 +2,13 @@
   include('./includes/arrays.php');
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <title>
-        <?php echo TITLE?>
-    </title>
+    <title><?php echo TITLE?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Font Awesome -->
@@ -32,34 +30,31 @@
 </head>
 
 <body>
-
 <!-- Navbar -->
 <div class="navbar-fixed">
   <nav class="black">
         <div class="nav-wrapper">
 
             <!-- Logo for Large Screen Devices -->
-            <a href="#" class="brand-logo hide-on-med-and-down">Adge Dining</a>
+            <a href="index.php" class="brand-logo hide-on-med-and-down logo">Adge Dining</a>
 
-            <ul class="hide-on-med-and-down right" id="centerList">
+            <ul class="hide-on-med-and-down right navbar-links">
                 <?php foreach($navbar_links as $value) {?>
-                <li>
-                    <a href="<?php echo $value['link']?>">
-                        <?php echo $value['name']?>
-                    </a>
+                <li class="  <?php if(strcmp(basename($_SERVER['PHP_SELF']), $value['link'])  == 0){echo "current-page";} ?>">
+                    <a href="<?php echo $value['link']?>"><?php echo $value['name']?></a>
                 </li>
                 <?php }?>
             </ul>
 
             <!-- Collapse button for mobile devices-->
-            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <a href="index.php" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 
             <!-- Logo for Mobile Devices -->
             <div class="logo center hide-on-large-only"><span>Adge Dining<span></div>
 
           <!-- Side Nav for Mobile Devices -->
           <ul class="side-nav" id="mobile-demo">
-            <a href="#" class="center"><div class="logo"><h4>Adge Dining</h4></div></a>
+            <a href="index.php" class="center"><div class="logo"><h4>Adge Dining</h4></div></a>
             <?php foreach($navbar_links as $value) {?>
               <div class="divider"></div>
               <li><a href="<?php echo $value['link']?>"><?php echo $value['name']?></a></li>

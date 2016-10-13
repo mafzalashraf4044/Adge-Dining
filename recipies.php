@@ -12,8 +12,8 @@
 
   			<div class="heading">
   						<img src="./images/forkspoon.png" class="circle">
-  						<h2>BEST OF DINING EXPERIENCE</h2>
-  				<h5>BOOK YOUR TABLE NOW</h5>
+  						<h2>IT'S FINGER SMOKIN' GOOD !</h2>
+  						<h5>OUR FEATURE RECIPES</h5>
   			</div>
 
 				<div class="card">

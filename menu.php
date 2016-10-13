@@ -18,8 +18,8 @@
     <div class="col l12">
       <div class="heading">
 				<img src="./images/forkspoonwhite.png" class="circle">
-				<h2>BEST OF DINING EXPERIENCE</h2>
-				<h5>BOOK YOUR TABLE NOW</h5>
+				<h2>COMPLETE YOUR DAY</h2>
+				<h5>ALL DAY FOOD SOLUTIONS</h5>
 			</div>
 
       <?php for ($i=0; $i < 6; $i++) { ?>
