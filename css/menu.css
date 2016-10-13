@@ -7,65 +7,66 @@ div#menuPage {
     min-height: 135vh;
 }
 
-div.row1{
-  min-height: 40vh;
-  background-color: #db4f44;
+div.row1 {
+    min-height: 40vh;
+    background-color: #db4f44;
 }
 
-div.row1 img{
-  width: 60%;
-  height: 60%;
+div.row1 img {
+    width: 60%;
+    height: 60%;
 }
 
-div.row1 h4{
-  color: white;
+div.row1 h4 {
+    color: white;
 }
 
-div.row1 > div.col.s12.l4{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: inherit;
+div.row1>div.col.s12.l4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: inherit;
 }
 
-div.row1 > div.col.s12.l8{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  min-height: inherit;
+div.row1>div.col.s12.l8 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: inherit;
 }
 
 div#menuPage>div.row2 {
     margin-bottom: 0px;
 }
 
-
-div.heading{
+div.heading {
     margin-bottom: 2em;
     text-align: center;
     margin-top: 20px;
-
 }
 
-div.heading h2, div.heading h5{
+div.heading h2, div.heading h5 {
     color: white;
     font-weight: bolder
 }
 
-.column-reverse{
-  display: flex;
-  flex-direction: row-reverse;
+.column-reverse {
+    display: flex;
+    flex-direction: row-reverse;
 }
 
-div.menu-category>.row{min-height:60vh;}
-div.menu-category div.l5{
+div.menu-category>.row {
+    min-height: 60vh;
+}
+
+div.menu-category div.l5 {
     background-image: url('../images/menu-category-1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     min-height: inherit;
 }
 
-div.menu-category div.l7{
+div.menu-category div.l7 {
     background-color: #F7F7F8;
     min-height: inherit;
     padding: 0px;
@@ -74,74 +75,67 @@ div.menu-category div.l7{
     justify-content: space-between;
 }
 
-div.dishes{
-  margin-left: 0px!important;
-  margin-right: 0px!important;
+div.dishes {
+    margin-left: 0px!important;
+    margin-right: 0px!important;
 }
 
-div.dishes div.card-content, div.dishes div.card-action{
-  padding: 5px 10px;
+div.dishes div.card-content, div.dishes div.card-action {
+    padding: 5px 10px;
 }
 
-div.dishes div.card{
+div.dishes div.card {
     min-height: 260px;
 }
 
-div.category-title{
-  margin: 0px 10px;
-  border-bottom: 1px solid grey;
-  color: grey;
+div.category-title {
+    margin: 0px 10px;
+    border-bottom: 1px solid grey;
+    color: grey;
 }
 
-div.category-title h2{}
+div.category-title h2 {}
 
-div.dishes h5{
-  color: grey;
-  text-overflow: ellipsis;
+div.dishes h5 {
+    color: grey;
+    text-overflow: ellipsis;
 }
 
-div.dishes p{
-  color: grey;
-  /*margin: 0px!important;*/
+div.dishes p {
+    color: grey;
+    /*margin: 0px!important;*/
 }
+
+
 /*for devices greater than 992px*/
 
 @media only screen and (min-device-width: 992px) {
-  div.row1{
-    padding: 0 8rem;
-  }
-
-
+    div.row1 {
+        padding: 0 8rem;
+    }
 }
 
 
 /*for devices less than 992px*/
 
 @media only screen and (max-device-width: 992px) {
-
     div.heading h2 {
         font-size: 2.3rem;
     }
-
-    div.row1 > div.col.s12.l4, div.row1 > div.col.s12.l8{
-      min-height: 15vh;
-      margin-top: 2rem;
-      text-align: center;
-      justify-content: center;
+    div.row1>div.col.s12.l4, div.row1>div.col.s12.l8 {
+        min-height: 15vh;
+        margin-top: 2rem;
+        text-align: center;
+        justify-content: center;
     }
-
-    div.row1 img{
-      width: 40%;
-      height: 40%;
+    div.row1 img {
+        width: 40%;
+        height: 40%;
     }
-
-    div.row1 h4{
-      font-size: 1.4rem;
+    div.row1 h4 {
+        font-size: 1.4rem;
     }
-
-    div.category-title{
-      text-align: center;
+    div.category-title {
+        text-align: center;
     }
-
-
 }

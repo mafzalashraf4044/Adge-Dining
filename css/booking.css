@@ -75,7 +75,7 @@ div.option>img {
 }
 
 div.option>div {
-    align-self: flex-end;
+    align-self: center;
     text-align: center;
     margin: 6px;
 }
@@ -132,25 +132,25 @@ div.form-area div.row {
 }
 
 
-/* Styling For Call Card */
+/* Styling For Contact Us Card */
 
-div.call-card .col {
+div.contact-us-card .col {
     min-height: 30vh;
 }
 
-div.call-card .l3 {
+div.contact-us-card .l3 {
     background-color: #505050;
     display: flex;
     align-items: center;
 }
 
-div.call-card .l3>h5 {
+div.contact-us-card .l3>h5 {
     color: #888888!important;
     font-size: 2.1rem!important;
     padding: 8px;
 }
 
-div.call-card .l5 {
+div.contact-us-card .l5 {
     background-color: #db4f44;
     color: white;
     display: inline-flex;
@@ -159,12 +159,12 @@ div.call-card .l5 {
     justify-content: center;
 }
 
-div.call-card .l5>div {
+div.contact-us-card .l5>div {
     display: inline-flex;
     flex-direction: row;
 }
 
-div.call-card .l5 i {
+div.contact-us-card .l5 i {
     width: 46px;
     height: 46px;
     font-size: 1.5rem;
@@ -175,11 +175,11 @@ div.call-card .l5 i {
     margin: 5px;
 }
 
-div.call-card .l5>h4 {
+div.contact-us-card .l5>h4 {
     display: inline-block;
 }
 
-div.call-card .l4 {
+div.contact-us-card .l4 {
     background-color: #db4f44;
     display: inline-flex;
     flex-direction: column;
@@ -187,18 +187,18 @@ div.call-card .l4 {
     justify-content: center;
 }
 
-div.call-card div.l4>a:hover {
+div.contact-us-card div.l4>a:hover {
     background-color: #db4f44;
     color: white!important;
     border: 1px solid white;
 }
 
-div.call-card div.l4>a:active {
+div.contact-us-card div.l4>a:active {
     background-color: rgba(219, 79, 68, 0.9);
     color: white!important;
 }
 
-div.call-card div.l4>a {
+div.contact-us-card div.l4>a {
     background-color: white;
     color: #db4f44;
 }
@@ -215,7 +215,7 @@ div.call-card div.l4>a {
     div.heading h2 {
         font-size: 2.3rem;
     }
-    div.call-card h4 {
+    div.contact-us-card h4 {
         font-size: 1.5em;
     }
     div.option {
