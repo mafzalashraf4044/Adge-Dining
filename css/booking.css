@@ -1,4 +1,4 @@
-div#bookingPage{
+div#bookingPage {
     background-image: url('../images/bookingBg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -6,49 +6,46 @@ div#bookingPage{
     min-height: 135vh;
 }
 
-div#bookingPage>div.row{
+div#bookingPage>div.row {
     margin-bottom: 0px;
 }
 
-div.heading{
+div.heading {
     margin-bottom: 2em;
+    text-align: center;
+    margin-top: 20px;
 }
 
-div.heading h2, div.heading h5{
+div.heading h2, div.heading h5 {
     color: white;
     font-weight: bolder
 }
 
-div#bookingPage .l12>div:first-child{
-    text-align: center;
+div.booking-form>.row {
+    min-height: 80vh;
 }
 
-div#bookingPage .l12>div:first-child{
-    margin-top: 20px;
-}
-
-div.booking-form>.row{min-height:80vh;}
-div.booking-form div.l5{
+div.booking-form div.l5 {
     background-image: url('../images/booking-menu-image.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     min-height: inherit;
 }
 
-div.booking-form div.l7{
+div.booking-form div.l7 {
     background-color: white;
     min-height: inherit;
     padding: 0px;
 }
 
-div.booking-form div.l7 > p{
+div.booking-form div.l7>p {
     margin-left: 8px;
 }
 
 
-
 /*   Select Person Options Styling   */
-div.select-person{
+
+div.select-person {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -56,7 +53,7 @@ div.select-person{
     padding-bottom: 50px;
 }
 
-div.option{
+div.option {
     position: relative;
     cursor: pointer;
     border: 2px solid #505050;
@@ -66,33 +63,31 @@ div.option{
     display: flex;
 }
 
-div.option-selected{
+div.option-selected {
     border: 2px solid #db4f44;
 }
 
-
-
-div.option > img{
+div.option>img {
     align-self: flex-start;
     width: 52px;
     height: 52px;
     margin: 6px;
 }
 
-div.option > div{
+div.option>div {
     align-self: flex-end;
     text-align: center;
     margin: 6px;
 }
 
-div.option p{
+div.option p {
     font-weight: bold;
     margin: 0px;
     margin-top: 2px;
     text-align: center;
 }
 
-div.option i.fa{
+div.option i.fa {
     visibility: hidden;
     position: absolute;
     right: 3px;
@@ -100,63 +95,62 @@ div.option i.fa{
     top: 3px;
     border: 2px solid #505050;
     border-radius: 3px;
-    font-size: 12px!important;    
+    font-size: 12px!important;
 }
-
 
 
 /*   Main Form Area Styling   */
-div.booking-form div.form-area{
+
+div.booking-form div.form-area {
     padding: 15px;
 }
 
-div.form-area input{
+div.form-area input {
     border-bottom-color: #505050;
 }
 
-div.form-area label{
-    color: rgba(80,80,80,0.8); 
+div.form-area label {
+    color: rgba(80, 80, 80, 0.8);
 }
 
-div.form-area button:hover{
+div.form-area button:hover {
     background-color: white;
     color: #db4f44!important;
 }
 
-div.form-area button:active{
-    background-color: rgba(219,79,68,0.9); 
+div.form-area button:active {
+    background-color: rgba(219, 79, 68, 0.9);
     color: white!important;
 }
 
-div.form-area button{
-    background-color: #db4f44; 
+div.form-area button {
+    background-color: #db4f44;
 }
 
-div.form-area div.row{
+div.form-area div.row {
     margin: 30px auto;
 }
 
 
 /* Styling For Call Card */
 
-div.call-card .col{
+div.call-card .col {
     min-height: 30vh;
 }
 
-
-div.call-card .l3{
+div.call-card .l3 {
     background-color: #505050;
     display: flex;
     align-items: center;
 }
 
-div.call-card .l3>h5{
-    color: #888888!important; 
+div.call-card .l3>h5 {
+    color: #888888!important;
     font-size: 2.1rem!important;
     padding: 8px;
 }
 
-div.call-card .l5{
+div.call-card .l5 {
     background-color: #db4f44;
     color: white;
     display: inline-flex;
@@ -165,12 +159,12 @@ div.call-card .l5{
     justify-content: center;
 }
 
-div.call-card .l5>div{
+div.call-card .l5>div {
     display: inline-flex;
     flex-direction: row;
 }
 
-div.call-card .l5 i{
+div.call-card .l5 i {
     width: 46px;
     height: 46px;
     font-size: 1.5rem;
@@ -179,12 +173,13 @@ div.call-card .l5 i{
     border: 3px solid white;
     border-radius: 100%;
     margin: 5px;
-
 }
 
-div.call-card .l5>h4{display: inline-block;}
+div.call-card .l5>h4 {
+    display: inline-block;
+}
 
-div.call-card .l4{
+div.call-card .l4 {
     background-color: #db4f44;
     display: inline-flex;
     flex-direction: column;
@@ -192,43 +187,38 @@ div.call-card .l4{
     justify-content: center;
 }
 
-div.call-card div.l4>a:hover{
+div.call-card div.l4>a:hover {
     background-color: #db4f44;
     color: white!important;
     border: 1px solid white;
 }
 
-div.call-card div.l4>a:active{
-    background-color: rgba(219,79,68,0.9); 
+div.call-card div.l4>a:active {
+    background-color: rgba(219, 79, 68, 0.9);
     color: white!important;
 }
 
-div.call-card div.l4>a{
+div.call-card div.l4>a {
     background-color: white;
-    color: #db4f44; 
+    color: #db4f44;
 }
-
 
 
 /*for devices greater than 992px*/
-@media only screen and (min-device-width: 992px) {
 
-}
+@media only screen and (min-device-width: 992px) {}
+
 
 /*for devices less than 992px*/
+
 @media only screen and (max-device-width: 992px) {
-div.heading h2{
-    font-size: 2.3rem;
-}
-
-div.call-card h4{
-    font-size: 1.5em;
-}
-
-div.option{
-    margin: 6px;
-}
-
-
-
+    div.heading h2 {
+        font-size: 2.3rem;
+    }
+    div.call-card h4 {
+        font-size: 1.5em;
+    }
+    div.option {
+        margin: 6px;
+    }
 }

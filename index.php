@@ -1,6 +1,6 @@
-<?php 
+<?php
   define('STYLESHEET', './css/index.css');
-  define("TITLE", "Home | Adge Dining");
+      define("TITLE", "Home | Adge Dining");
   include('./includes/header.php');
 ?>
 
@@ -9,7 +9,7 @@
     <div class="col m7 col-left">
 
       <h1>Adge Dining</h1>
-    
+
       <p>Since the opening in late 2012; Baccomatto Osteria has delivered a no-fuss approach to Italian food & wine. Baccomatto uses the freshest of ingredients including all their pasta made fresh on a daily basis. Come and taste the selection of tapas-style starters, mains and desserts at our rustic Italian eatery today.</p>
 
       <p>Baccomatto Osteria have recently received 1 hat at the The Sydney Morning Herald 2017 Good Food Guide Awards.</p>
@@ -49,6 +49,6 @@
   </div>
 </div>
 
-<?php 
+<?php
   include('./includes/footer.php');
 ?>

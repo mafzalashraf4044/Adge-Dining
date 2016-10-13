@@ -1,21 +1,17 @@
 <?php
-define('STYLESHEET', './css/booking.css');
-define('SCRIPT', './scripts/booking.js');
-define("TITLE", "Book Now | Adge Dining");
-
-
-include('./includes/header.php');
-
+	define('STYLESHEET', './css/booking.css');
+	define('SCRIPT', './scripts/booking.js');
+	define("TITLE", "Book Now | Adge Dining");
+	include('./includes/header.php');
 ?>
 
 <div id="bookingPage">
-
 	<div class="row">
 		<div class="col l12">
 
 			<div class="heading">
-				<img src="./images/forkspoon.png" class="circle">
-				<h2>BEST OF DINING EXPERIENCE</h2>
+						<img src="./images/forkspoon.png" class="circle">
+						<h2>BEST OF DINING EXPERIENCE</h2>
 				<h5>BOOK YOUR TABLE NOW</h5>
 			</div>
 
@@ -87,7 +83,7 @@ include('./includes/header.php');
 										<label for="name">Enter your name</label>
 									</div>
 									<div class="input-field col s4">
-										<input placeholder="" id="phone-number" type="text" class="validate">
+											<input placeholder="" id="phone-number" type="text" class="validate">
 										<label for="phone-number">Phone number</label>
 									</div>
 									<div class="input-field col s4">
@@ -102,7 +98,6 @@ include('./includes/header.php');
 					</div>
 				</div>
 			</div>
-
 
 			<div class="container call-card">
 				<div class="row">
