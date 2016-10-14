@@ -1,0 +1,34 @@
+/*  Navbar Styling  */
+
+nav {
+    padding: 0 120px;
+    /*box-shadow: 0 0.5px 12px 0 white;*/
+}
+
+nav a {
+    color: #bfc8ce!important;
+}
+
+a.brand-logo {
+    font-family: Papyrus, fantasy;
+    font-weight: bold;
+    color: #f16522!important;
+}
+
+div.logo {
+    font-family: Papyrus, fantasy;
+    font-weight: bold;
+}
+
+div.logo span {
+    font-size: 1.5rem;
+}
+
+div#footer {
+    padding: 1rem 0.3rem 2rem 0.3rem;
+    font-weight: bold;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+}

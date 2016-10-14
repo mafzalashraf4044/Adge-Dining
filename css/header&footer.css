@@ -83,10 +83,33 @@ div#footer1 .socialIcons>li {
     margin-right: 8px;
 }
 
+#footer1 input{
+  margin-bottom: 5px;
+}
+
+#footer1 .hidden{
+  visibility: hidden;
+}
+
+#footer1 .error{
+  display: inline-block;
+  color: #9e9e9e;
+  font-size: 0.8em;
+  margin-bottom: 15px;
+  visibility: visible;
+  font-weight: bold;
+}
+
+i.error > span{
+  font-family: "Roboto", sans-serif;
+}
+
+
 div#footer2 {
     padding: 1rem 0.3rem 2rem 0.3rem;
     font-weight: bold;
 }
+
 
 
 /*  for devices greater than 992px   */

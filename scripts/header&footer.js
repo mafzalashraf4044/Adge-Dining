@@ -9,4 +9,12 @@ $(document).ready(function() {
 $('.carousel.carousel-slider').carousel({
     full_width: true
 });
-s
+
+//Form Validation for Subscription Form In footer
+
+$('input').on("invalid", function(e) {
+    e.preventDefault();
+    console.log(e.target);
+    $(e.target).next().next().removeClass('hidden');
+    $(e.target).next().next().addClass('error');
+});
