@@ -27,7 +27,7 @@ div.logo span {
 div#footer {
     padding: 1rem 0.3rem 2rem 0.3rem;
     font-weight: bold;
-    position: absolute;
+    position: fixed;
     left: 0px;
     bottom: 0px;
     width: 100%;

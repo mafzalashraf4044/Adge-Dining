@@ -1,5 +1,6 @@
 <?php
   include('./includes/arrays.php');
+  include('./includes/db.php');
 ?>
 
 <!DOCTYPE html>
@@ -64,6 +65,45 @@
       </div>
     </nav>
   </div>
+
+<?php
+  $sql = "SELECT no_of_person, time, day, name, ph_no, email, confirmed FROM online_table_booking";
+  $result = $conn->query($sql);
+
+  if ($result->num_rows > 0) {
+    // output data of each row
+
+  while($row = $result->fetch_assoc()) { ?>
+
+
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content">
+              <h5>Name: <?php echo $row["name"]; ?></h5>
+              <h5>Name: <?php echo $row["no_of_person"]; ?></h5>
+              <h5>Name: <?php echo $row["time"]; ?></h5>
+              <h5>Name: <?php echo $row["day"]; ?></h5>
+              <h5>Name: <?php echo $row["ph_no"]; ?></h5>
+              <h5>Name: <?php echo $row["email"]; ?></h5>
+            </div>
+            <div class="card-action">
+              <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Confirm</a>
+            </div>
+          </div>
+        </div>
+
+<?php }
+
+   }else {
+    echo "0 results";
+  }
+  $conn->close();
+
+?>
+
+
+  <!-- Main Admin Panel  -->
+
 
 
   <div class="black white-text section" id="footer">
