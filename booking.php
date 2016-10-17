@@ -98,7 +98,7 @@
 						   <?php if(!$errors) {?>
 						     <h4>Dear Customer !</h4>
 						     <div class="divider"></div>
-						     <p>Your Booking Request has been received, You will be informed after confirmation! Thank You</p>
+						     <p>Thanks for your reserving table at Adge Dining. Our representative will contact you very soon.</p>
 						   <?php } ?>
 
 						   </div>

@@ -1,18 +1,9 @@
-/*  Navbar Styling  */
-
-nav {
-    padding: 0 120px;
-    /*box-shadow: 0 0.5px 12px 0 white;*/
-}
-
-nav a {
-    color: #bfc8ce!important;
-}
-
+/*  SideNav Styling  */
 a.brand-logo {
     font-family: Papyrus, fantasy;
     font-weight: bold;
     color: #f16522!important;
+    font-size: 1.5em;
 }
 
 div.logo {
@@ -24,12 +15,66 @@ div.logo span {
     font-size: 1.5rem;
 }
 
-div#footer {
-    padding: 1rem 0.3rem 2rem 0.3rem;
+
+
+/*  Footer Styling  */
+
+div#footer, div#header {
+    padding: 1.4rem 1rem 0.9rem 1rem;
     font-weight: bold;
-    position: fixed!important;
-    z-index: 10;
-    left: 0px;
-    bottom: 0px;
     width: 100%;
+}
+
+div#header img{
+  width: 30px;
+  height: 30px;
+  padding-bottom: 4px;
+  margin-right: 8px;
+}
+
+div#header-sm-scr{
+  display: flex;
+  justify-content: space-around;
+}
+
+div#header-sm-scr i{
+  text-decoration: none;
+  font-size: 2.64rem;
+  line-height: 110%;
+  margin: 0.4rem 0 0.656rem 0;
+  color: #f16522!important;
+}
+
+ul#side-nav i.material-icons{
+  margin: 0px;
+}
+
+ul.collapsible.popout{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.side-nav .collapsible {
+    margin: 0px 0px -8px 0px;
+}
+
+body {
+  background-color: #F3F3F3;
+  display: flex;
+  flex-direction: column;
+  padding-left: 300px;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+div.panel-body{
+  min-height: 80vh;
+}
+
+
+
+@media only screen and (max-width : 992px) {
+  body {
+    padding-left: 0;
+  }
 }

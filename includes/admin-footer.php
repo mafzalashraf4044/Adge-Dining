@@ -1,4 +1,4 @@
-<div class="black white-text section" id="footer">
+<div class="black white-text" id="footer">
   <div class="left">&copy; <?php echo Date('Y');?> Adge Dining</div>
   <div class="right">Designed &amp; Developed by Afzal Ashraf</div>
 </div>
