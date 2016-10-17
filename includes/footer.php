@@ -155,6 +155,17 @@
       </script>
     <?php } ?>
 
+<!-- Opening model On Booking Form Submission -->
+    <?php if($show_dialog_box2) {?>
+      <script type="text/javascript">
+				console.log('model2 triggered');
+        $(document).ready(function(){
+					$('#modal2').openModal();
+          // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+        });
+      </script>
+    <?php } ?>
+
 
 </body>
 </html>

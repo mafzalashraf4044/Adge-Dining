@@ -40,43 +40,38 @@
 						<!-- Database Logic For Online Booking Form Submission -->
 
 						<?php
-							$inputs_array = array();
 							$inputs_value = array();
 							$show_dialog_box2 = false;
+							$inputs_err_msg = array();
 						  $errors = false;
 
 						  //This code will run when the user submits the form and the page reloads(b/c of action att set to PHP_SELF)
 						  if($_SERVER["REQUEST_METHOD"] == "POST" && $_POST['submit'] == 'Booking'){
-						    $show_dialog_box = true;
+						    $show_dialog_box2 = true;
 
 								foreach ($_POST as $key => $value) {
-									$inputs_array[] = validate_input($value);
 
-								}
+									if($key != 'submit'){
+										$inputs_value += [$key => sanitize_input($value)];
+										$inputs_err_msg += [$key => validate_input($key, $value)];
 
-								foreach ($inputs_array as $input_array) {
+										if($inputs_err_msg[$key] != NULL){
+											$errors = true;
+										}
 
-									if($input_array['err_msg'] != NULL){
-										$errors = true;
 									}
-
-									$inputs_value[] = $input_array['input_value'];
-
 								}
 
+								$keys = implode(', ', array_keys($inputs_value));
+								$values = implode("','", array_values($inputs_value));
 
-								for ($i=0; $i < count($inputs_array); $i++) {
-									echo $inputs_array[$i]['input_value'];
-								}
+					      $sql = "INSERT INTO online_table_booking ($keys)
+					      VALUES ('$values')";
 
-					      $sql = "INSERT INTO online_table_booking (no_of_person, time, day, name, ph_no, email)
-					      VALUES ('$inputs_array[0]=>input_value', '$inputs_value[1]', '$inputs_value[2]', '$inputs_value[3]', '$inputs_value[4]', '$inputs_value[5]')";
-
-						      if (!$errors) {
-						        $conn->query($sql);
+						      if (!$errors && $conn->query($sql)) {
 										echo "added successfully!";
 						      }else {
-									    echo "Error: " . $sql . "<br>" . $conn->error;
+										// echo "Error: " . $sql . "<br>" . $conn->error;
 									}
 
 						    $conn->close();
@@ -91,9 +86,10 @@
 						   <?php if($errors) {?>
 						     <h4>Booking Form Submission Failed !</h4>
 						     <div class="divider"></div>
-								 <?php for ($i=0; $i < count($inputs_array); $i++) { ?>
-										 <p><?php if($inputs_array['err_msg'] != NULL){echo $inputs_array['err_msg'];} ?></p>
-								 <?php } ?>
+
+								 <?php foreach ($inputs_err_msg as $key => $value) {?>
+									 <p><?php echo $value ?></p>
+ 								 <?php }?>
 
 						   <?php } ?>
 
@@ -177,15 +173,6 @@
 	</div>
 </div>
 
-<!-- Opening model On Booking Form Submission -->
-    <?php if($show_dialog_box2) {?>
-      <script type="text/javascript">
-        $(document).ready(function(){
-					$('#modal2').openModal();
-          // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-        });
-      </script>
-    <?php } ?>
 
 <?php
 include('./includes/footer.php');

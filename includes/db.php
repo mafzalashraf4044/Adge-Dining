@@ -11,16 +11,12 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-function validate_input($input_value){
-    $err_msg = NULL;
+function validate_input($key, $input_value){
 
-    if(!empty($input_value)){
-      $input_value = sanitize_input($input_value);
-    }else{
-      $err_msg = "Name is Required!";
+    if(empty($input_value)){
+      return "$key is Required!";
     }
-
-    return ['input_value'=>$input_value, 'err_msg'=>$err_msg];
+    return NULL;
 }
 
 function sanitize_input($data) {
