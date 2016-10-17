@@ -1,5 +1,7 @@
 <?php
   include('./includes/arrays.php');
+  //including connection to db from db.php, this file alse contains some pre-defined methods for validation etc
+  include('includes/db.php');
 ?>
 
 

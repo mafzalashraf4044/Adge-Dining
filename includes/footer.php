@@ -26,31 +26,26 @@
   $duplicate_email = false;
 
   //This code will run when the user submits the form and the page reloads(b/c of action att set to PHP_SELF)
-  if($_SERVER["REQUEST_METHOD"] == "POST"){
+  if($_SERVER["REQUEST_METHOD"] == "POST" && $_POST['submit'] == 'Join'){
+
     $show_dialog_box = true;
     $name = $_POST["name"];
     $email = $_POST["email"];
 
-    //including connection to db from db.php, this file alse contains some pre-defined methods for validation etc
-    include('includes/db.php');
 
     //is_duplicate is a method inside db.php file, used to check if the given value already exists in the column specified
-    $duplicate_email = is_duplicate("email", "subscribed_customers");
+      $sql = "SELECT email FROM subscribed_customers";
+      $result = $conn->query($sql);
 
+      if ($result->num_rows > 0) {
+          // output data of each row
+          while($row = $result->fetch_assoc()) {
+              if($row["email"] == $email){
+                  $duplicate_email = true;
+              }
+          }
+      }
 
-
-      // $sql = "SELECT $column FROM $table";
-      // $result = $conn->query($sql);
-      //
-      // if ($result->num_rows > 0) {
-      //     // output data of each row
-      //     while($row = $result->fetch_assoc()) {
-      //         if($row["email"] == $email){
-      //             $duplicate_email = true;
-      //         }
-      //     }
-      // }
-      //
 
 
     //if the email address already exists, form will not be submitted
@@ -73,10 +68,10 @@
         $errors = true;
       }
 
-    }
+      if (!$errors) {
+        $conn->query($sql);
+      }
 
-    if (!$errors) {
-      $conn->query($sql);
     }
 
     $conn->close();
@@ -119,19 +114,20 @@
         <div class="col m6 s12 offset-m2">
           <h5 class="white-text section">SIGN UP FOR SPECIAL OFFERS</h5>
           <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST" id="footerForm">
+
             <div class="input-field">
-              <input id="name" type="text" name="name" class="validate white-text">
+              <input id="name" type="text" name="name" required class="validate white-text">
               <label for="name">Full Name</label>
               <i class="hidden fa fa-warning"> <span>Name is Required!</span></i>
             </div>
 
             <div class="input-field">
-              <input id="email" type="text" name="email" class="validate white-text">
+              <input id="email" type="text" name="email" required class="validate white-text">
               <label for="email">Email</label>
               <i class="hidden fa fa-warning"> <span>Email is Required!</span></i>
             </div>
 
-            <button type="submit" class="waves-effect waves-light btn">JOIN</button>
+            <input type="submit" class="waves-effect waves-light btn" name="submit" value="Join" >
           </form>
         </div>
       </div>

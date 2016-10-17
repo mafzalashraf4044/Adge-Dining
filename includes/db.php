@@ -11,27 +11,23 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
+function validate_input($input_value){
+    $err_msg = NULL;
+
+    if(!empty($input_value)){
+      $input_value = sanitize_input($input_value);
+    }else{
+      $err_msg = "Name is Required!";
+    }
+
+    return ['input_value'=>$input_value, 'err_msg'=>$err_msg];
+}
+
 function sanitize_input($data) {
   $data = trim($data);
   $data = stripslashes($data);
   $data = htmlspecialchars($data);
   return $data;
-}
-
-function is_duplicate($column, $table) {
-  global $conn;
-  
-  $sql = "SELECT $column FROM $table";
-  $result = $conn->query($sql);
-
-  if ($result->num_rows > 0) {
-      // output data of each row
-      while($row = $result->fetch_assoc()) {
-          if($row["email"] == $email){
-              return true;
-          }
-      }
-  }
 }
 
 ?>
