@@ -5,10 +5,19 @@ $password = "";
 $dbname = "adge-dining";
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+function open_db_conn(){
+  global $servername;
+  global $username;
+  global $password;
+  global $dbname;
+
+  $conn = new mysqli($servername, $username, $password, $dbname);
+  // Check connection
+  if ($conn->connect_error) {
+      die("Connection failed: " . $conn->connect_error);
+  }
+
+  return $conn;
 }
 
 function validate_input($key, $input_value){

@@ -19,6 +19,8 @@
 <!-- Database Logic For Subscribe Form Submission -->
 
 <?php
+
+  $conn = open_db_conn();
   $name = $email = "";
   $nameErr = $emailErr = "";
   $show_dialog_box = false;
