@@ -1,7 +1,4 @@
-<?php
-  include('./includes/arrays.php');
-  include('./includes/db.php');
-?>
+<?php include('../../includes/arrays.php') ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,15 +14,16 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
 
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Materialize CSS-->
-    <link rel="stylesheet" href="./materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="../../materialize/css/materialize.min.css">
 
     <!-- Custom CSS-->
-    <link rel="stylesheet" href="./css/admin.css">
+    <link rel="stylesheet" href="../../css/admin.css">
 
 </head>
 
@@ -33,7 +31,7 @@
   <div class="black white-text" id="header">
     <div class="left">Admin Panel Home</div>
     <div class="right">Logged In as: Afzal Ashraf</div>
-    <img class="responsive-img circle right" src="./images/user-icon.png">
+    <img class="responsive-img circle right" src="../../images/user-icon.png">
   </div>
 
 
@@ -47,31 +45,36 @@
 
   <ul id="side-nav" class="side-nav fixed">
     <li><div class="userView">
-      <img class="background" src="./images/bg5.jpg">
+      <img class="background" src="../../images/bg5.jpg">
       <a href="#!"><h4 class="white-text brand-logo">Adge Dining</h4></a>
       <a href="#!"><h5 class="white-text">Admin Panel</h5></a>
     </div></li>
     <li class="no-padding">
       <ul class="collapsible collapsible-accordion">
         <li>
-          <a class="collapsible-header"><i class="material-icons right">arrow_drop_down</i>Table Booking</a>
+          <a class="collapsible-header">Mange Menu<i class="material-icons right">arrow_drop_down</i></a>
           <div class="collapsible-body">
             <ul>
-              <li><a href="#!">Pending Confirmations</a></li>
-              <li><a href="#!">Confirmed Bookings</a></li>
+              <li><a href="../booking/pending.php">Pending Reservations</a></li>
+              <li><a href="../booking/confirmed.php">Confirmed Reservation</a></li>
             </ul>
           </div>
         </li>
       </ul>
-    </li><li><div class="divider"></div></li>
+    </li>
+
+
+    <li><div class="divider"></div></li>
     <li class="no-padding">
       <ul class="collapsible collapsible-accordion">
         <li>
           <a class="collapsible-header">Mange Menu<i class="material-icons right">arrow_drop_down</i></a>
           <div class="collapsible-body">
             <ul>
-              <li><a href="#!">Pending Approval</a></li>
-              <li><a href="#!">Delete</a></li>
+              <li><a href="#!">New Category</a></li>
+              <li><a href="#!">Add Items</a></li>
+              <li><a href="#!">Delete Menu</a></li>
+              <li><a href="#!">Edit Menu</a></li>
             </ul>
           </div>
         </li>

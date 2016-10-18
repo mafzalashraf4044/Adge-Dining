@@ -78,3 +78,25 @@ div.panel-body{
     padding-left: 0;
   }
 }
+
+
+
+/*  Pending.php Styling  */
+
+div.reservation-card{
+  width: 90%;
+  margin: 10px auto;
+  font-family: 'Courgette', cursive;
+}
+
+div.reservation-card table{
+
+}
+
+div.reservation-card div.card-action{
+  text-align: right;
+}
+
+div.reservation-card form{
+  display: inline-block;
+}

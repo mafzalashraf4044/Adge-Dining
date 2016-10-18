@@ -4,13 +4,13 @@
 </div>
 
 
-  <script src="jquery-2.2.3.min.js"></script>
-  <script src="./materialize/js/materialize.min.js"></script>
+  <script src="../../jquery-2.2.3.min.js"></script>
+  <script src="../../materialize/js/materialize.min.js"></script>
   <script>
     //Side Nav Initializatino for Mobile Devices
     $(".button-collapse").sideNav();
   </script>
-  <script src="<?php echo SCRIPT;?>"></script>
+  <!-- <script src="../scripts/admin.js"></script> -->
 
 </body>
 </html>
