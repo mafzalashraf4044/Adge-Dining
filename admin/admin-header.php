@@ -52,7 +52,7 @@
     <li class="no-padding">
       <ul class="collapsible collapsible-accordion">
         <li>
-          <a class="collapsible-header">Mange Menu<i class="material-icons right">arrow_drop_down</i></a>
+          <a class="collapsible-header">Table Reservation<i class="material-icons right">arrow_drop_down</i></a>
           <div class="collapsible-body">
             <ul>
               <li><a href="../booking/pending.php">Pending Reservations</a></li>
@@ -102,7 +102,7 @@
           <div class="collapsible-body">
             <ul>
               <?php foreach($navbar_links as $value) {?>
-                <li><a href="<?php echo $value['link']?>"><?php echo $value['name']?></a></li>
+                <li><a href="<?php echo "../../" . $value['link']?>"><?php echo $value['name']?></a></li>
 
               <?php }?>
             </ul>

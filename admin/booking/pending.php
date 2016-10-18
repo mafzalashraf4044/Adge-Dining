@@ -3,10 +3,8 @@
   include('../../includes/db.php');
 ?>
 
-<div class="panel-body">
-  <h1>Pending Reservations</h1>
-  <div>
-
+<div class="panel-body booking">
+  <h2>Pending Reservations</h2>
   <?php
     $conn = open_db_conn();
 
@@ -112,16 +110,18 @@
             </div>
           </div>
 
-  <?php }}
+  <?php }else {
+   echo "<h5>There are no Pending Reservations</h5>";
+  }
+
+  }
 
      }else {
-      echo "0 results";
+      echo "<h5>There are no Pending Reservations</h5>";
     }
     $conn->close();
 
   ?>
-  </div>
-
 </div>
 
   <?php

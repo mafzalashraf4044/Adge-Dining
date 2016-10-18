@@ -3,8 +3,8 @@
   include('../../includes/db.php');
 ?>
 
-<div class="panel-body">
-  <h1>Confirmed Reservations</h1>
+<div class="panel-body booking">
+  <h2>Confirmed Reservations</h2>
 
   <?php
     $conn = open_db_conn();
@@ -43,7 +43,8 @@
     }
 
   ?>
-  <div>
+
+
   <?php
     $conn = open_db_conn();
 
@@ -129,15 +130,17 @@
             </div>
           </div>
 
-  <?php }}
+  <?php }else {
+     echo "<h5>There are no Confirmed Reservations</h5>";
+     }
+
+    }
 
      }else {
-      echo "0 results";
+      echo "<h5>There are no Confirmed Reservations</h5>";
     }
     $conn->close();
-
-  ?>
-  </div>
+    ?>
 
 </div>
 

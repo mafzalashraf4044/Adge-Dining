@@ -100,3 +100,7 @@ div.reservation-card div.card-action{
 div.reservation-card form{
   display: inline-block;
 }
+
+div.booking > h2, div.booking > h5{
+  padding-left: 1rem;
+}
