@@ -60,7 +60,6 @@ div.menu-category>.row {
 }
 
 div.menu-category div.l5 {
-    background-image: url('../images/menu-category-1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     min-height: inherit;
@@ -103,7 +102,14 @@ div.dishes h5 {
 
 div.dishes p {
     color: grey;
-    /*margin: 0px!important;*/
+}
+
+div.carousel{
+  height: 330px;
+}
+
+span.carousel-item{
+  top: -60px!important;
 }
 
 

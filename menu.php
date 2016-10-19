@@ -6,6 +6,7 @@
 ?>
 
 <div id="menuPage">
+
   <div class="row row1">
       <div class="col s12 l4">
           <img class="responsive-img" src="./images/menu.png" alt="Circular Menu Header Image" />
@@ -22,39 +23,82 @@
 				<h5>ALL DAY FOOD SOLUTIONS</h5>
 			</div>
 
-      <?php for ($i=0; $i < 6; $i++) { ?>
-      <div class="container menu-category">
-				<div class="row <?php if($i%2!=0){echo "column-reverse";} ?>">
-					<div class="col s12 l5 hide-on-med-and-down"></div>
+      <?php
+        $conn = open_db_conn();
 
-					<div class="col s12 l7">
-            <div class="category-title">
-              <h2>Starter</h2>
-              <p>Fresh and apetizing starter</p>
-            </div>
+        $sql = "SELECT menu_id, category, caption, img_url FROM menu";
 
-            <div class="row dishes">
-              <?php for ($j=0; $j < 3; $j++) { ?>
-                  <div class="col s12 m4">
-                    <div class="card">
-                      <div class="card-image">
-                        <img src="./images/categ1-img1.jpg">
-                      </div>
-                      <div class="card-content">
-                        <h5>Chicken Tender</h5>
-                      </div>
-                      <div class="card-action">
-                        <p>Price: 400 Rs.</p>
-                      </div>
-                    </div>
+        $result = $conn->query($sql);
+
+        if ($result->num_rows > 0) {
+
+
+        while($row = $result->fetch_assoc()) { ?>
+            <?php $id = $row["menu_id"]; ?>
+            <div class="container menu-category">
+      				<div class="row ">
+      					<div class="col s12 l5 hide-on-med-and-down" style="background-image: url('./images/<?php echo $row["img_url"];?>.jpg');"></div>
+
+      					<div class="col s12 l7">
+                  <div class="category-title">
+                    <h2><?php echo $row["category"]; ?></h2>
+                    <p><?php echo $row["caption"]; ?></p>
                   </div>
-              <?php } ?>
+
+      <?php
+        $_sql = "SELECT category, item_name, img_url, price FROM menu_items WHERE category = $id";
+
+        $_result = $conn->query($_sql);
+
+        if ($_result->num_rows > 0) {?>
+
+
+          <div class="dishes">
+            <div class="carousel">
+
+        <?php while($_row = $_result->fetch_assoc()) {?>
+          <span class="carousel-item">
+
+                          <div class="card">
+                            <div class="card-image">
+                              <img src="./images/<?php echo $_row["img_url"];?>.jpg">
+                            </div>
+                            <div class="card-content">
+                              <h5><?php echo $_row["item_name"]; ?></h5>
+                            </div>
+                            <div class="card-action">
+                              <p>Price: <?php echo $_row["price"]; ?> Rs.</p>
+                            </div>
+                          </div>
+
+          </span>
+
+          <?php } ?>
+            </div>
             </div>
 
-					</div>
-				</div>
-			</div>
-      <?php } ?>
+          <?php  }?>
+
+
+      					</div>
+      				</div>
+      			</div>
+
+
+
+      <?php
+
+        }
+
+         }
+        $conn->close();
+        ?>
+
+
+
+
+
+
     </div>
   </div>
 </div>
