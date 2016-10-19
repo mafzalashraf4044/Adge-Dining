@@ -30,4 +30,6 @@
 
     $no_of_person = array("02", "05", "10", "custom");
 
+    $show_dialog_box2 = false;
+
 ?>

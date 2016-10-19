@@ -101,6 +101,38 @@ div.reservation-card form{
   display: inline-block;
 }
 
-div.booking > h2, div.booking > h5{
-  padding-left: 1rem;
+div.booking > h2, div.booking > h5, .left-margin{
+  margin-left: 1rem;
+}
+
+
+/*  Add Category and Items Styling  */
+div.form-area{
+  margin: 0px 1rem;
+}
+
+div.button-area{
+  margin: 1rem;
+  text-align: right;
+}
+
+div.form-area input{
+  margin-bottom: 5px;
+}
+
+div.form-area .hidden{
+  visibility: hidden;
+}
+
+div.form-area .error{
+  display: inline-block;
+  color: #9e9e9e;
+  font-size: 0.8em;
+  margin-bottom: 15px;
+  visibility: visible;
+  font-weight: bold;
+}
+
+i.error > span{
+  font-family: "Roboto", sans-serif;
 }

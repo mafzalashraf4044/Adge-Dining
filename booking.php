@@ -43,7 +43,6 @@
 							$conn = open_db_conn();
 
 							$inputs_value = array();
-							$show_dialog_box2 = false;
 							$inputs_err_msg = array();
 						  $errors = false;
 
