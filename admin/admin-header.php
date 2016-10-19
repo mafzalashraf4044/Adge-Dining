@@ -71,8 +71,8 @@
           <a class="collapsible-header">Mange Menu<i class="material-icons right">arrow_drop_down</i></a>
           <div class="collapsible-body">
             <ul>
-              <li><a href="#!">New Category</a></li>
-              <li><a href="#!">Add Items</a></li>
+              <li><a href="../menu/add-category.php">New Category</a></li>
+              <li><a href="../menu/add-items.php">Add Items</a></li>
               <li><a href="#!">Delete Menu</a></li>
               <li><a href="#!">Edit Menu</a></li>
             </ul>

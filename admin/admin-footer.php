@@ -9,6 +9,10 @@
   <script>
     //Side Nav Initializatino for Mobile Devices
     $(".button-collapse").sideNav();
+
+    $(document).ready(function() {
+        $('select').material_select();
+    });
   </script>
   <!-- <script src="../scripts/admin.js"></script> -->
 
